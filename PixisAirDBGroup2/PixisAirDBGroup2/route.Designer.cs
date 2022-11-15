@@ -70,7 +70,6 @@
             this.cityTextBox = new System.Windows.Forms.TextBox();
             this.sqlSearchButton = new System.Windows.Forms.Button();
             this.db2SearchButton = new System.Windows.Forms.Button();
-            this.sqlUpdateButton = new System.Windows.Forms.Button();
             this.db2UpdateButton = new System.Windows.Forms.Button();
             rTIDLabel = new System.Windows.Forms.Label();
             rTARDEPARTLabel = new System.Windows.Forms.Label();
@@ -431,23 +430,15 @@
             this.db2SearchButton.UseVisualStyleBackColor = true;
             this.db2SearchButton.Click += new System.EventHandler(this.db2SearchButton_Click);
             // 
-            // sqlUpdateButton
-            // 
-            this.sqlUpdateButton.Location = new System.Drawing.Point(859, 30);
-            this.sqlUpdateButton.Name = "sqlUpdateButton";
-            this.sqlUpdateButton.Size = new System.Drawing.Size(169, 40);
-            this.sqlUpdateButton.TabIndex = 24;
-            this.sqlUpdateButton.Text = "SQL Update";
-            this.sqlUpdateButton.UseVisualStyleBackColor = true;
-            // 
             // db2UpdateButton
             // 
-            this.db2UpdateButton.Location = new System.Drawing.Point(859, 90);
+            this.db2UpdateButton.Location = new System.Drawing.Point(869, 58);
             this.db2UpdateButton.Name = "db2UpdateButton";
-            this.db2UpdateButton.Size = new System.Drawing.Size(168, 40);
+            this.db2UpdateButton.Size = new System.Drawing.Size(149, 40);
             this.db2UpdateButton.TabIndex = 25;
             this.db2UpdateButton.Text = "DB2 Update";
             this.db2UpdateButton.UseVisualStyleBackColor = true;
+            this.db2UpdateButton.Click += new System.EventHandler(this.db2UpdateButton_Click);
             // 
             // route
             // 
@@ -455,7 +446,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1087, 500);
             this.Controls.Add(this.db2UpdateButton);
-            this.Controls.Add(this.sqlUpdateButton);
             this.Controls.Add(this.db2SearchButton);
             this.Controls.Add(this.sqlSearchButton);
             this.Controls.Add(this.cityTextBox);
@@ -526,7 +516,6 @@
         private System.Windows.Forms.TextBox cityTextBox;
         private System.Windows.Forms.Button sqlSearchButton;
         private System.Windows.Forms.Button db2SearchButton;
-        private System.Windows.Forms.Button sqlUpdateButton;
         private System.Windows.Forms.Button db2UpdateButton;
     }
 }
