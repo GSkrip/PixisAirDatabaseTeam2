@@ -16,7 +16,7 @@ namespace PixisAirDBGroup2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new IBM());
+            Application.Run(new IBMJordan());
         }
     }
 }

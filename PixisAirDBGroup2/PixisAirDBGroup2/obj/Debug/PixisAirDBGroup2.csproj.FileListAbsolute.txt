@@ -20,11 +20,12 @@ C:\Users\1404756\Source\Repos\GSkrip\PixisAirDatabaseTeam2\PixisAirDBGroup2\Pixi
 C:\Users\1404756\Source\Repos\GSkrip\PixisAirDatabaseTeam2\PixisAirDBGroup2\PixisAirDBGroup2\bin\Debug\IBM.Data.DB2.iSeries.xml
 C:\Users\1404756\Source\Repos\GSkrip\PixisAirDatabaseTeam2\PixisAirDBGroup2\PixisAirDBGroup2\obj\Debug\PixisAirDBGroup2.csproj.AssemblyReference.cache
 C:\Users\1404756\Source\Repos\GSkrip\PixisAirDatabaseTeam2\PixisAirDBGroup2\PixisAirDBGroup2\obj\Debug\PixisAirDBGroup2.csproj.SuggestedBindingRedirects.cache
-C:\Users\1404756\Source\Repos\GSkrip\PixisAirDatabaseTeam2\PixisAirDBGroup2\PixisAirDBGroup2\obj\Debug\PixisAirDBGroup2.Form1.resources
-C:\Users\1404756\Source\Repos\GSkrip\PixisAirDatabaseTeam2\PixisAirDBGroup2\PixisAirDBGroup2\obj\Debug\PixisAirDBGroup2.IBM.resources
 C:\Users\1404756\Source\Repos\GSkrip\PixisAirDatabaseTeam2\PixisAirDBGroup2\PixisAirDBGroup2\obj\Debug\PixisAirDBGroup2.Properties.Resources.resources
 C:\Users\1404756\Source\Repos\GSkrip\PixisAirDatabaseTeam2\PixisAirDBGroup2\PixisAirDBGroup2\obj\Debug\PixisAirDBGroup2.csproj.GenerateResource.cache
 C:\Users\1404756\Source\Repos\GSkrip\PixisAirDatabaseTeam2\PixisAirDBGroup2\PixisAirDBGroup2\obj\Debug\PixisAirDBGroup2.csproj.CoreCompileInputs.cache
 C:\Users\1404756\Source\Repos\GSkrip\PixisAirDatabaseTeam2\PixisAirDBGroup2\PixisAirDBGroup2\obj\Debug\PixisAirDBGroup2.csproj.CopyComplete
 C:\Users\1404756\Source\Repos\GSkrip\PixisAirDatabaseTeam2\PixisAirDBGroup2\PixisAirDBGroup2\obj\Debug\PixisAirDBGroup2.exe
 C:\Users\1404756\Source\Repos\GSkrip\PixisAirDatabaseTeam2\PixisAirDBGroup2\PixisAirDBGroup2\obj\Debug\PixisAirDBGroup2.pdb
+C:\Users\1404756\Source\Repos\GSkrip\PixisAirDatabaseTeam2\PixisAirDBGroup2\PixisAirDBGroup2\obj\Debug\PixisAirDBGroup2.SQLBoyer.resources
+C:\Users\1404756\Source\Repos\GSkrip\PixisAirDatabaseTeam2\PixisAirDBGroup2\PixisAirDBGroup2\obj\Debug\PixisAirDBGroup2.MainForm.resources
+C:\Users\1404756\Source\Repos\GSkrip\PixisAirDatabaseTeam2\PixisAirDBGroup2\PixisAirDBGroup2\obj\Debug\PixisAirDBGroup2.IBMJordan.resources

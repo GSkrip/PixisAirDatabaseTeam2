@@ -11,12 +11,12 @@ using IBM.Data.DB2.iSeries;
 
 namespace PixisAirDBGroup2
 {
-    public partial class IBM : Form
+    public partial class IBMJordan : Form
     {
         iDB2Connection conn;
         iDB2DataAdapter adapter;
         DataSet dataset;
-        public IBM()
+        public IBMJordan()
         {
             InitializeComponent();
         }
@@ -100,6 +100,11 @@ namespace PixisAirDBGroup2
         private void button4_Click(object sender, EventArgs e)
         {
            
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
