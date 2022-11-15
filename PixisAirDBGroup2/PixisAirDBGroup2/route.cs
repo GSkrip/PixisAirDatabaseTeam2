@@ -37,9 +37,9 @@ namespace PixisAirDBGroup2
         private void route_Load(object sender, EventArgs e)
         {
             this.routeTableAdapter.Fill(this.pixisAirDataSet.Route);
-            connectionString = "Data Source=v2studentpoc;Initial Catalog=AdventureWorks2016;" +
+            connectionString = "Data Source=v2studentpoc;Initial Catalog=PixisAir;" +
                 "Persist Security Info=True;User ID=Student;Password=ichooseGateway";
-            SQL = "Select * FROM Sale.SalesTerritory";
+            SQL = "Select * FROM dbo.Route";
             connection = new SqlConnection(connectionString);
             dataAdapter = new SqlDataAdapter(SQL, connection);
             dataSet = new DataSet();
@@ -48,7 +48,8 @@ namespace PixisAirDBGroup2
         private void sqlSearchButton_Click(object sender, EventArgs e)
         {
             string city = cityTextBox.Text;
-            SQL = "SELECT BusinessEntityID, PersonType, LastName, FirstName FROM Person.Person WHERE PersonType='" + city + "'";
+            SQL = "SELECT RTID, RTARDEPART, RTARARRIVL, RTDISTANCE, RTESTTM, RTBASECOST, RTACTDT, RTIACTDT, RTNO FROM" +
+                   " dbo.Route WHERE RTARARRIVL = '" + city + "'";
             displayListBox.Items.Clear();
             try
             {
@@ -56,13 +57,19 @@ namespace PixisAirDBGroup2
                 dataAdapter.SelectCommand.CommandText = SQL;
                 dataAdapter.Fill(dataSet);
                 foreach (DataRow dataRow in dataSet.Tables[0].Rows)
-                    displayListBox.Items.Add(dataRow[0] + ", " + dataRow[1] + ", " + dataRow[2] + ", " + dataRow[3]);
+                    displayListBox.Items.Add(dataRow[0] + ", " + dataRow[1] + ", " + dataRow[2] + ", " + dataRow[3] + 
+                        ", " + dataRow[4] + ", " + dataRow[5] + ", " + dataRow[6] + ", " + dataRow[7] + ", " + dataRow[8]);
                 connection.Close();
             }
             catch (Exception ex)
             {
                 displayListBox.Items.Add(ex.Message);
             }
+        }
+
+        private void db2SearchButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

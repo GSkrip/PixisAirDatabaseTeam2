@@ -429,6 +429,7 @@
             this.db2SearchButton.TabIndex = 23;
             this.db2SearchButton.Text = "DB2 Search";
             this.db2SearchButton.UseVisualStyleBackColor = true;
+            this.db2SearchButton.Click += new System.EventHandler(this.db2SearchButton_Click);
             // 
             // sqlUpdateButton
             // 
