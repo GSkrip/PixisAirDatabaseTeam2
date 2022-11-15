@@ -61,7 +61,8 @@ namespace PixisAirDBGroup2
             String cmdText = "INSERT INTO AIRPLANE VALUES(@PLANENO, @MAXDIST, @FCLASS,@CCLASS,@PAVAIL,@MAINTMILES,@PLANEMODEL,@PMAKE,@APARCD,@APACTDT,@APIACTDT,@STATUS,@DATEMAINT)";
             try
             {
-                conn = new iDB2Connection("DataSource=deathstar.gtc.edu");
+                
+
                 conn.Open();
                 iDB2Command cmd = new iDB2Command(cmdText, conn);
                 cmd.DeriveParameters();
@@ -98,8 +99,7 @@ namespace PixisAirDBGroup2
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Form1 = new Form1();
-            Form1.Show();
+           
         }
     }
 }

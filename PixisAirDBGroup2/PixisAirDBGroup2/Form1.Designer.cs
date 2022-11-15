@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             System.Windows.Forms.Label planeNoLabel;
             System.Windows.Forms.Label mAXDISTLabel;
             System.Windows.Forms.Label fCLASSLabel;
@@ -43,6 +42,7 @@
             System.Windows.Forms.Label aPIACDDTLabel;
             System.Windows.Forms.Label sTATUSLabel;
             System.Windows.Forms.Label dATEMAINTLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -51,17 +51,17 @@
             this.airplaneTableAdapter = new PixisAirDBGroup2.PixisAirDataSetTableAdapters.AirplaneTableAdapter();
             this.tableAdapterManager = new PixisAirDBGroup2.PixisAirDataSetTableAdapters.TableAdapterManager();
             this.airplaneBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.airplaneBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.planeNoTextBox = new System.Windows.Forms.TextBox();
             this.mAXDISTTextBox = new System.Windows.Forms.TextBox();
@@ -94,6 +94,123 @@
             ((System.ComponentModel.ISupportInitialize)(this.airplaneBindingNavigator)).BeginInit();
             this.airplaneBindingNavigator.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // planeNoLabel
+            // 
+            planeNoLabel.AutoSize = true;
+            planeNoLabel.Location = new System.Drawing.Point(8, 31);
+            planeNoLabel.Name = "planeNoLabel";
+            planeNoLabel.Size = new System.Drawing.Size(54, 13);
+            planeNoLabel.TabIndex = 4;
+            planeNoLabel.Text = "Plane No:";
+            // 
+            // mAXDISTLabel
+            // 
+            mAXDISTLabel.AutoSize = true;
+            mAXDISTLabel.Location = new System.Drawing.Point(179, 31);
+            mAXDISTLabel.Name = "mAXDISTLabel";
+            mAXDISTLabel.Size = new System.Drawing.Size(58, 13);
+            mAXDISTLabel.TabIndex = 6;
+            mAXDISTLabel.Text = "MAXDIST:";
+            // 
+            // fCLASSLabel
+            // 
+            fCLASSLabel.AutoSize = true;
+            fCLASSLabel.Location = new System.Drawing.Point(357, 31);
+            fCLASSLabel.Name = "fCLASSLabel";
+            fCLASSLabel.Size = new System.Drawing.Size(50, 13);
+            fCLASSLabel.TabIndex = 8;
+            fCLASSLabel.Text = "FCLASS:";
+            // 
+            // cCLASSLabel
+            // 
+            cCLASSLabel.AutoSize = true;
+            cCLASSLabel.Location = new System.Drawing.Point(520, 31);
+            cCLASSLabel.Name = "cCLASSLabel";
+            cCLASSLabel.Size = new System.Drawing.Size(51, 13);
+            cCLASSLabel.TabIndex = 10;
+            cCLASSLabel.Text = "CCLASS:";
+            // 
+            // pAVAILLabel
+            // 
+            pAVAILLabel.AutoSize = true;
+            pAVAILLabel.Location = new System.Drawing.Point(686, 34);
+            pAVAILLabel.Name = "pAVAILLabel";
+            pAVAILLabel.Size = new System.Drawing.Size(47, 13);
+            pAVAILLabel.TabIndex = 12;
+            pAVAILLabel.Text = "PAVAIL:";
+            // 
+            // mAINTMILESLabel
+            // 
+            mAINTMILESLabel.AutoSize = true;
+            mAINTMILESLabel.Location = new System.Drawing.Point(7, 57);
+            mAINTMILESLabel.Name = "mAINTMILESLabel";
+            mAINTMILESLabel.Size = new System.Drawing.Size(76, 13);
+            mAINTMILESLabel.TabIndex = 14;
+            mAINTMILESLabel.Text = "MAINTMILES:";
+            // 
+            // pLANEMODELLabel
+            // 
+            pLANEMODELLabel.AutoSize = true;
+            pLANEMODELLabel.Location = new System.Drawing.Point(206, 57);
+            pLANEMODELLabel.Name = "pLANEMODELLabel";
+            pLANEMODELLabel.Size = new System.Drawing.Size(83, 13);
+            pLANEMODELLabel.TabIndex = 16;
+            pLANEMODELLabel.Text = "PLANEMODEL:";
+            // 
+            // pMAKELabel
+            // 
+            pMAKELabel.AutoSize = true;
+            pMAKELabel.Location = new System.Drawing.Point(418, 60);
+            pMAKELabel.Name = "pMAKELabel";
+            pMAKELabel.Size = new System.Drawing.Size(47, 13);
+            pMAKELabel.TabIndex = 18;
+            pMAKELabel.Text = "PMAKE:";
+            // 
+            // aPARCDLabel
+            // 
+            aPARCDLabel.AutoSize = true;
+            aPARCDLabel.Location = new System.Drawing.Point(584, 60);
+            aPARCDLabel.Name = "aPARCDLabel";
+            aPARCDLabel.Size = new System.Drawing.Size(54, 13);
+            aPARCDLabel.TabIndex = 20;
+            aPARCDLabel.Text = "APARCD:";
+            // 
+            // aPACDTLabel
+            // 
+            aPACDTLabel.AutoSize = true;
+            aPACDTLabel.Location = new System.Drawing.Point(14, 87);
+            aPACDTLabel.Name = "aPACDTLabel";
+            aPACDTLabel.Size = new System.Drawing.Size(53, 13);
+            aPACDTLabel.TabIndex = 22;
+            aPACDTLabel.Text = "APACDT:";
+            // 
+            // aPIACDDTLabel
+            // 
+            aPIACDDTLabel.AutoSize = true;
+            aPIACDDTLabel.Location = new System.Drawing.Point(290, 87);
+            aPIACDDTLabel.Name = "aPIACDDTLabel";
+            aPIACDDTLabel.Size = new System.Drawing.Size(64, 13);
+            aPIACDDTLabel.TabIndex = 24;
+            aPIACDDTLabel.Text = "APIACDDT:";
+            // 
+            // sTATUSLabel
+            // 
+            sTATUSLabel.AutoSize = true;
+            sTATUSLabel.Location = new System.Drawing.Point(573, 87);
+            sTATUSLabel.Name = "sTATUSLabel";
+            sTATUSLabel.Size = new System.Drawing.Size(53, 13);
+            sTATUSLabel.TabIndex = 26;
+            sTATUSLabel.Text = "STATUS:";
+            // 
+            // dATEMAINTLabel
+            // 
+            dATEMAINTLabel.AutoSize = true;
+            dATEMAINTLabel.Location = new System.Drawing.Point(745, 88);
+            dATEMAINTLabel.Name = "dATEMAINTLabel";
+            dATEMAINTLabel.Size = new System.Drawing.Size(73, 13);
+            dATEMAINTLabel.TabIndex = 28;
+            dATEMAINTLabel.Text = "DATEMAINT:";
             // 
             // listBox1
             // 
@@ -181,6 +298,31 @@
             this.airplaneBindingNavigator.TabIndex = 3;
             this.airplaneBindingNavigator.Text = "bindingNavigator1";
             // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
+            // 
             // bindingNavigatorMoveFirstItem
             // 
             this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -208,22 +350,16 @@
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 15);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 6);
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -231,7 +367,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -240,49 +376,22 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 6);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 20);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
             // airplaneBindingNavigatorSaveItem
             // 
             this.airplaneBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.airplaneBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("airplaneBindingNavigatorSaveItem.Image")));
             this.airplaneBindingNavigatorSaveItem.Name = "airplaneBindingNavigatorSaveItem";
-            this.airplaneBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
+            this.airplaneBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
             this.airplaneBindingNavigatorSaveItem.Text = "Save Data";
             this.airplaneBindingNavigatorSaveItem.Click += new System.EventHandler(this.airplaneBindingNavigatorSaveItem_Click_1);
-            // 
-            // planeNoLabel
-            // 
-            planeNoLabel.AutoSize = true;
-            planeNoLabel.Location = new System.Drawing.Point(8, 31);
-            planeNoLabel.Name = "planeNoLabel";
-            planeNoLabel.Size = new System.Drawing.Size(54, 13);
-            planeNoLabel.TabIndex = 4;
-            planeNoLabel.Text = "Plane No:";
             // 
             // planeNoTextBox
             // 
@@ -292,15 +401,6 @@
             this.planeNoTextBox.Size = new System.Drawing.Size(100, 20);
             this.planeNoTextBox.TabIndex = 5;
             // 
-            // mAXDISTLabel
-            // 
-            mAXDISTLabel.AutoSize = true;
-            mAXDISTLabel.Location = new System.Drawing.Point(179, 31);
-            mAXDISTLabel.Name = "mAXDISTLabel";
-            mAXDISTLabel.Size = new System.Drawing.Size(58, 13);
-            mAXDISTLabel.TabIndex = 6;
-            mAXDISTLabel.Text = "MAXDIST:";
-            // 
             // mAXDISTTextBox
             // 
             this.mAXDISTTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.airplaneBindingSource, "MAXDIST", true));
@@ -308,15 +408,6 @@
             this.mAXDISTTextBox.Name = "mAXDISTTextBox";
             this.mAXDISTTextBox.Size = new System.Drawing.Size(100, 20);
             this.mAXDISTTextBox.TabIndex = 7;
-            // 
-            // fCLASSLabel
-            // 
-            fCLASSLabel.AutoSize = true;
-            fCLASSLabel.Location = new System.Drawing.Point(357, 31);
-            fCLASSLabel.Name = "fCLASSLabel";
-            fCLASSLabel.Size = new System.Drawing.Size(50, 13);
-            fCLASSLabel.TabIndex = 8;
-            fCLASSLabel.Text = "FCLASS:";
             // 
             // fCLASSTextBox
             // 
@@ -326,15 +417,6 @@
             this.fCLASSTextBox.Size = new System.Drawing.Size(100, 20);
             this.fCLASSTextBox.TabIndex = 9;
             // 
-            // cCLASSLabel
-            // 
-            cCLASSLabel.AutoSize = true;
-            cCLASSLabel.Location = new System.Drawing.Point(520, 31);
-            cCLASSLabel.Name = "cCLASSLabel";
-            cCLASSLabel.Size = new System.Drawing.Size(51, 13);
-            cCLASSLabel.TabIndex = 10;
-            cCLASSLabel.Text = "CCLASS:";
-            // 
             // cCLASSTextBox
             // 
             this.cCLASSTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.airplaneBindingSource, "CCLASS", true));
@@ -342,15 +424,6 @@
             this.cCLASSTextBox.Name = "cCLASSTextBox";
             this.cCLASSTextBox.Size = new System.Drawing.Size(100, 20);
             this.cCLASSTextBox.TabIndex = 11;
-            // 
-            // pAVAILLabel
-            // 
-            pAVAILLabel.AutoSize = true;
-            pAVAILLabel.Location = new System.Drawing.Point(686, 34);
-            pAVAILLabel.Name = "pAVAILLabel";
-            pAVAILLabel.Size = new System.Drawing.Size(47, 13);
-            pAVAILLabel.TabIndex = 12;
-            pAVAILLabel.Text = "PAVAIL:";
             // 
             // pAVAILTextBox
             // 
@@ -360,15 +433,6 @@
             this.pAVAILTextBox.Size = new System.Drawing.Size(100, 20);
             this.pAVAILTextBox.TabIndex = 13;
             // 
-            // mAINTMILESLabel
-            // 
-            mAINTMILESLabel.AutoSize = true;
-            mAINTMILESLabel.Location = new System.Drawing.Point(7, 57);
-            mAINTMILESLabel.Name = "mAINTMILESLabel";
-            mAINTMILESLabel.Size = new System.Drawing.Size(76, 13);
-            mAINTMILESLabel.TabIndex = 14;
-            mAINTMILESLabel.Text = "MAINTMILES:";
-            // 
             // mAINTMILESTextBox
             // 
             this.mAINTMILESTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.airplaneBindingSource, "MAINTMILES", true));
@@ -376,15 +440,6 @@
             this.mAINTMILESTextBox.Name = "mAINTMILESTextBox";
             this.mAINTMILESTextBox.Size = new System.Drawing.Size(100, 20);
             this.mAINTMILESTextBox.TabIndex = 15;
-            // 
-            // pLANEMODELLabel
-            // 
-            pLANEMODELLabel.AutoSize = true;
-            pLANEMODELLabel.Location = new System.Drawing.Point(206, 57);
-            pLANEMODELLabel.Name = "pLANEMODELLabel";
-            pLANEMODELLabel.Size = new System.Drawing.Size(83, 13);
-            pLANEMODELLabel.TabIndex = 16;
-            pLANEMODELLabel.Text = "PLANEMODEL:";
             // 
             // pLANEMODELTextBox
             // 
@@ -394,15 +449,6 @@
             this.pLANEMODELTextBox.Size = new System.Drawing.Size(100, 20);
             this.pLANEMODELTextBox.TabIndex = 17;
             // 
-            // pMAKELabel
-            // 
-            pMAKELabel.AutoSize = true;
-            pMAKELabel.Location = new System.Drawing.Point(418, 60);
-            pMAKELabel.Name = "pMAKELabel";
-            pMAKELabel.Size = new System.Drawing.Size(47, 13);
-            pMAKELabel.TabIndex = 18;
-            pMAKELabel.Text = "PMAKE:";
-            // 
             // pMAKETextBox
             // 
             this.pMAKETextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.airplaneBindingSource, "PMAKE", true));
@@ -410,15 +456,6 @@
             this.pMAKETextBox.Name = "pMAKETextBox";
             this.pMAKETextBox.Size = new System.Drawing.Size(100, 20);
             this.pMAKETextBox.TabIndex = 19;
-            // 
-            // aPARCDLabel
-            // 
-            aPARCDLabel.AutoSize = true;
-            aPARCDLabel.Location = new System.Drawing.Point(584, 60);
-            aPARCDLabel.Name = "aPARCDLabel";
-            aPARCDLabel.Size = new System.Drawing.Size(54, 13);
-            aPARCDLabel.TabIndex = 20;
-            aPARCDLabel.Text = "APARCD:";
             // 
             // aPARCDTextBox
             // 
@@ -428,15 +465,6 @@
             this.aPARCDTextBox.Size = new System.Drawing.Size(100, 20);
             this.aPARCDTextBox.TabIndex = 21;
             // 
-            // aPACDTLabel
-            // 
-            aPACDTLabel.AutoSize = true;
-            aPACDTLabel.Location = new System.Drawing.Point(14, 87);
-            aPACDTLabel.Name = "aPACDTLabel";
-            aPACDTLabel.Size = new System.Drawing.Size(53, 13);
-            aPACDTLabel.TabIndex = 22;
-            aPACDTLabel.Text = "APACDT:";
-            // 
             // aPACDTDateTimePicker
             // 
             this.aPACDTDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.airplaneBindingSource, "APACDT", true));
@@ -444,15 +472,6 @@
             this.aPACDTDateTimePicker.Name = "aPACDTDateTimePicker";
             this.aPACDTDateTimePicker.Size = new System.Drawing.Size(200, 20);
             this.aPACDTDateTimePicker.TabIndex = 23;
-            // 
-            // aPIACDDTLabel
-            // 
-            aPIACDDTLabel.AutoSize = true;
-            aPIACDDTLabel.Location = new System.Drawing.Point(290, 87);
-            aPIACDDTLabel.Name = "aPIACDDTLabel";
-            aPIACDDTLabel.Size = new System.Drawing.Size(64, 13);
-            aPIACDDTLabel.TabIndex = 24;
-            aPIACDDTLabel.Text = "APIACDDT:";
             // 
             // aPIACDDTDateTimePicker
             // 
@@ -462,15 +481,6 @@
             this.aPIACDDTDateTimePicker.Size = new System.Drawing.Size(200, 20);
             this.aPIACDDTDateTimePicker.TabIndex = 25;
             // 
-            // sTATUSLabel
-            // 
-            sTATUSLabel.AutoSize = true;
-            sTATUSLabel.Location = new System.Drawing.Point(573, 87);
-            sTATUSLabel.Name = "sTATUSLabel";
-            sTATUSLabel.Size = new System.Drawing.Size(53, 13);
-            sTATUSLabel.TabIndex = 26;
-            sTATUSLabel.Text = "STATUS:";
-            // 
             // sTATUSTextBox
             // 
             this.sTATUSTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.airplaneBindingSource, "STATUS", true));
@@ -478,15 +488,6 @@
             this.sTATUSTextBox.Name = "sTATUSTextBox";
             this.sTATUSTextBox.Size = new System.Drawing.Size(100, 20);
             this.sTATUSTextBox.TabIndex = 27;
-            // 
-            // dATEMAINTLabel
-            // 
-            dATEMAINTLabel.AutoSize = true;
-            dATEMAINTLabel.Location = new System.Drawing.Point(745, 88);
-            dATEMAINTLabel.Name = "dATEMAINTLabel";
-            dATEMAINTLabel.Size = new System.Drawing.Size(73, 13);
-            dATEMAINTLabel.TabIndex = 28;
-            dATEMAINTLabel.Text = "DATEMAINT:";
             // 
             // dATEMAINTDateTimePicker
             // 
@@ -532,7 +533,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.listBox1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "JordanSQL";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pixisAirDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.airplaneBindingSource)).EndInit();

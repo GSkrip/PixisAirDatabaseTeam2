@@ -45,14 +45,13 @@
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.textBox13 = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(987, 256);
+            this.button1.Location = new System.Drawing.Point(969, 301);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(109, 38);
+            this.button1.Size = new System.Drawing.Size(125, 60);
             this.button1.TabIndex = 0;
             this.button1.Text = "Display";
             this.button1.UseVisualStyleBackColor = true;
@@ -60,9 +59,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(987, 321);
+            this.button2.Location = new System.Drawing.Point(969, 367);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(109, 38);
+            this.button2.Size = new System.Drawing.Size(125, 57);
             this.button2.TabIndex = 1;
             this.button2.Text = "Insert";
             this.button2.UseVisualStyleBackColor = true;
@@ -70,9 +69,9 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(987, 393);
+            this.button3.Location = new System.Drawing.Point(969, 430);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(109, 41);
+            this.button3.Size = new System.Drawing.Size(125, 60);
             this.button3.TabIndex = 2;
             this.button3.Text = "Exit";
             this.button3.UseVisualStyleBackColor = true;
@@ -177,22 +176,11 @@
             this.textBox13.Size = new System.Drawing.Size(100, 20);
             this.textBox13.TabIndex = 17;
             // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(987, 458);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 18;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
             // IBM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1184, 590);
-            this.Controls.Add(this.button4);
             this.Controls.Add(this.textBox13);
             this.Controls.Add(this.textBox12);
             this.Controls.Add(this.textBox11);
@@ -211,7 +199,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "IBM";
-            this.Text = "IBM";
+            this.Text = "JordanIBM";
             this.Load += new System.EventHandler(this.IBM_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -237,6 +225,5 @@
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.Button button4;
     }
 }
