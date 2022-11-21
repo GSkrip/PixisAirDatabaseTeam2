@@ -17,6 +17,11 @@
   &lt;ProviderName&gt;System.Data.OleDb&lt;/ProviderName&gt;
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
       <Value Profile="(Default)">Provider=IBMDA400.DataSource.1;Data Source=deathstar.gtc.edu;User ID=itpa225</Value>
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=V2StudentPOC;Initial Catalog=PixisAir;Persist Security Info=True;User ID=Student;Password=ichooseGateway&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=V2StudentPOC;Initial Catalog=PixisAir;Persist Security Info=True;User ID=Student;Password=ichooseGateway</Value>
     </Setting>
   </Settings>
 </SettingsFile>

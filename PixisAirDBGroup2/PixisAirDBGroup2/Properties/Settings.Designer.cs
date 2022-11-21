@@ -26,8 +26,8 @@ namespace PixisAirDBGroup2.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=v2studentpoc;Initial Catalog=PixisAir;User ID=Student;Password=ichoos" +
-            "eGateway")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=V2StudentPOC;Initial Catalog=PixisAir;Persist Security Info=True;User" +
+            " ID=Student;Password=ichooseGateway")]
         public string PixisAirConnectionString {
             get {
                 return ((string)(this["PixisAirConnectionString"]));
