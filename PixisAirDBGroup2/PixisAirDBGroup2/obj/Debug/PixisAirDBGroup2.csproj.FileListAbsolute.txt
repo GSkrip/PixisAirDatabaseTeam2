@@ -46,3 +46,5 @@ C:\Users\1243189\Source\Repos\GSkrip\PixisAirDatabaseTeam2\PixisAirDBGroup2\Pixi
 C:\Users\1243189\Source\Repos\GSkrip\PixisAirDatabaseTeam2\PixisAirDBGroup2\PixisAirDBGroup2\bin\Debug\IBM.Data.DB2.iSeries.dll
 C:\Users\1243189\Source\Repos\GSkrip\PixisAirDatabaseTeam2\PixisAirDBGroup2\PixisAirDBGroup2\bin\Debug\IBM.Data.DB2.iSeries.xml
 C:\Users\1243189\Source\Repos\GSkrip\PixisAirDatabaseTeam2\PixisAirDBGroup2\PixisAirDBGroup2\obj\Debug\PixisAirDBGroup2.csproj.CopyComplete
+C:\Users\1243189\Source\Repos\GSkrip\PixisAirDatabaseTeam2\PixisAirDBGroup2\PixisAirDBGroup2\obj\Debug\PixisAirDBGroup2.Airport.resources
+C:\Users\1243189\Source\Repos\GSkrip\PixisAirDatabaseTeam2\PixisAirDBGroup2\PixisAirDBGroup2\obj\Debug\PixisAirDBGroup2.IBM.resources

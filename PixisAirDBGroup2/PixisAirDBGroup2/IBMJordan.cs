@@ -32,7 +32,7 @@ namespace PixisAirDBGroup2
             string sql;
             try
             {
-                conn = new iDB2Connection("DataSource=deathstar.gtc.edu");
+                conn = new iDB2Connection("DataSource=deathstar.gtc.edu;LibraryList=FLIGHT2022;Naming=System");
                 sql = "SELECT * FROM AIRPLANE";
                 adapter = new iDB2DataAdapter(sql, conn);
 

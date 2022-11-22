@@ -14,8 +14,8 @@ namespace PixisAirDBGroup2
     {
         private IBMJordan ibmJordan;
         private SQLBoyer sqlBoyer;
-        //private Airport tomAirport;
-        //private IBM tomIbm;
+        private Airport tomAirport;
+        private IBM tomIbm;
         private route gregRoute;
 
         public MainForm()
@@ -37,14 +37,14 @@ namespace PixisAirDBGroup2
 
         private void btnTomIBM_Click(object sender, EventArgs e)
         {
-            //tomIbm = new IBM();
-            //tomIbm.Show();
+            tomIbm = new IBM();
+            tomIbm.Show();
         }
 
         private void btnTomSql_Click(object sender, EventArgs e)
         {
-            //tomAirport = new Airport();
-            //tomAirport.Show();
+            tomAirport = new Airport();
+            tomAirport.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)

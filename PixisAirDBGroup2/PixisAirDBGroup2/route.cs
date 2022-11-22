@@ -1,16 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
+﻿using IBM.Data.DB2.iSeries;
+using System;
 using System.Data;
-using System.Data.Common;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using IBM.Data.DB2.iSeries;
 
 namespace PixisAirDBGroup2
 {
@@ -59,7 +51,7 @@ namespace PixisAirDBGroup2
                 dataAdapter.SelectCommand.CommandText = SQL;
                 dataAdapter.Fill(dataSet);
                 foreach (DataRow dataRow in dataSet.Tables[0].Rows)
-                    displayListBox.Items.Add(dataRow[0] + ", " + dataRow[1] + ", " + dataRow[2] + ", " + dataRow[3] + 
+                    displayListBox.Items.Add(dataRow[0] + ", " + dataRow[1] + ", " + dataRow[2] + ", " + dataRow[3] +
                         ", " + dataRow[4] + ", " + dataRow[5] + ", " + dataRow[6] + ", " + dataRow[7] + ", " + dataRow[8]);
                 connection.Close();
             }
@@ -72,7 +64,7 @@ namespace PixisAirDBGroup2
         private void db2SearchButton_Click(object sender, EventArgs e)
         {
             string city = cityTextBox.Text;
-            
+
             try
             {
                 conn = new iDB2Connection("DataSource=deathstar.gtc.edu;LibraryList=FLIGHT2022;Naming=System");
