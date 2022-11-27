@@ -51,6 +51,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Airport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Airport.Designer.cs" />
+    <Compile Include="IBM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IBM.Designer.cs" />
+    <Compile Include="route.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="route.Designer.cs" />
     <Compile Include="SQLBoyer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +88,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Airport.resx" />
+    <EmbeddedResource Include="IBM.resx" />
+    <EmbeddedResource Include="route.resx" />
     <EmbeddedResource Include="SQLBoyer.resx">
       <DependentUpon>SQLBoyer.cs</DependentUpon>
     </EmbeddedResource>
