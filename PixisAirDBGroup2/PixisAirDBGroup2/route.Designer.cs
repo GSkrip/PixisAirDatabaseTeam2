@@ -193,7 +193,7 @@
             this.routeBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.routeBindingNavigator.Name = "routeBindingNavigator";
             this.routeBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.routeBindingNavigator.Size = new System.Drawing.Size(1087, 25);
+            this.routeBindingNavigator.Size = new System.Drawing.Size(1101, 25);
             this.routeBindingNavigator.TabIndex = 0;
             this.routeBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -259,7 +259,6 @@
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -315,9 +314,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(866, 159);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(115, 13);
+            this.label1.Size = new System.Drawing.Size(155, 13);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Search Routes by City:";
+            this.label1.Text = "Search Routes by Airport code:";
             // 
             // rTARDEPARTTextBox
             // 
@@ -346,7 +345,7 @@
             // displayListBox
             // 
             this.displayListBox.FormattingEnabled = true;
-            this.displayListBox.Location = new System.Drawing.Point(0, 120);
+            this.displayListBox.Location = new System.Drawing.Point(15, 146);
             this.displayListBox.Name = "displayListBox";
             this.displayListBox.Size = new System.Drawing.Size(820, 368);
             this.displayListBox.TabIndex = 11;
@@ -398,7 +397,7 @@
             // tableAdapterManager
             // 
             this.tableAdapterManager.AirplaneTableAdapter = null;
-            //this.tableAdapterManager.AIRPORTTableAdapter = null;
+            this.tableAdapterManager.AIRPORTTableAdapter = null;
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.RouteTableAdapter = this.routeTableAdapter;
             this.tableAdapterManager.UpdateOrder = PixisAirDBGroup2.PixisAirDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
@@ -444,7 +443,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1087, 500);
+            this.ClientSize = new System.Drawing.Size(1101, 526);
             this.Controls.Add(this.db2UpdateButton);
             this.Controls.Add(this.db2SearchButton);
             this.Controls.Add(this.sqlSearchButton);

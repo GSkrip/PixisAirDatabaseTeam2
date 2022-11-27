@@ -1,8 +1,16 @@
-﻿using IBM.Data.DB2.iSeries;
-using System;
+﻿using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Data;
+using System.Data.Common;
 using System.Data.SqlClient;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
+using IBM.Data.DB2.iSeries;
 
 namespace PixisAirDBGroup2
 {
@@ -51,7 +59,7 @@ namespace PixisAirDBGroup2
                 dataAdapter.SelectCommand.CommandText = SQL;
                 dataAdapter.Fill(dataSet);
                 foreach (DataRow dataRow in dataSet.Tables[0].Rows)
-                    displayListBox.Items.Add(dataRow[0] + ", " + dataRow[1] + ", " + dataRow[2] + ", " + dataRow[3] +
+                    displayListBox.Items.Add(dataRow[0] + ", " + dataRow[1] + ", " + dataRow[2] + ", " + dataRow[3] + 
                         ", " + dataRow[4] + ", " + dataRow[5] + ", " + dataRow[6] + ", " + dataRow[7] + ", " + dataRow[8]);
                 connection.Close();
             }
@@ -64,7 +72,7 @@ namespace PixisAirDBGroup2
         private void db2SearchButton_Click(object sender, EventArgs e)
         {
             string city = cityTextBox.Text;
-
+            
             try
             {
                 conn = new iDB2Connection("DataSource=deathstar.gtc.edu;LibraryList=FLIGHT2022;Naming=System");
@@ -89,32 +97,42 @@ namespace PixisAirDBGroup2
 
         private void db2UpdateButton_Click(object sender, EventArgs e)
         {
-            String cmdText = "INSERT INTO ROUTE VALUES(@RTID, @RTARDEPART, @RTARARRIVL, @RTDISTANCE, @RTESTTM, " +
-                             "@RTBASECOST, @RTACTDT, @RTIACTDT, @RTNO)";
+            //String cmdText = "INSERT INTO ROUTE VALUES(@RTID, @RTARDEPART, @RTARARRIVL, @RTDISTANCE, @RTESTTM, " +
+            // "@RTBASECOST, @RTACTDT, @RTIACTDT, @RTNO)";
+
+            string rtactdtTemp = rTACTDTDateTimePicker.Value.ToString("s");
+            string rtactdt = rtactdtTemp.Substring(0, rtactdtTemp.IndexOf("T"));
+            string rtiactdtTemp = rTIACTDTDateTimePicker.Value.ToString("s");
+            string rtiactdt = rtiactdtTemp.Substring(0, rtiactdtTemp.IndexOf("T"));
+
+            string cmdText = "INSERT INTO FLIGHT2022.ROUTE  VALUES(default , '" + rTARDEPARTTextBox.Text.ToUpper() + "', '" + rTARARRIVLTextBox.Text.ToUpper() +
+                                "', " + rTDISTANCETextBox.Text + ", " + rTESTTMTextBox.Text + ", " + rTBASECOSTTextBox.Text + ", '" + 
+                                rtactdt + "', '" +
+                                rtiactdt + "', " + rTNOTextBox.Text + ")";
             try
             {
                 conn = new iDB2Connection("DataSource=deathstar.gtc.edu;LibraryList=FLIGHT2022;Naming=System");
                 conn.Open();
 
-                string rtactdt = rTACTDTDateTimePicker.Value.Year.ToString() + "-" + rTACTDTDateTimePicker.Value.Month.ToString() +
-                                 "-" + rTACTDTDateTimePicker.Value.Day.ToString();
-                string rtiactdt = rTIACTDTDateTimePicker.Value.Year.ToString() + "-" + rTIACTDTDateTimePicker.Value.Month.ToString() +
-                                 "-" + rTIACTDTDateTimePicker.Value.Day.ToString();
+                iDB2Command cmd = new iDB2Command();
+                cmd.Connection = conn;
+                cmd.CommandText = cmdText;
+                cmd.ExecuteNonQuery();
+                displayListBox.Items.Add("Entry added successfully.");
 
-
-                iDB2Command cmd = new iDB2Command(cmdText, conn);
+                /*iDB2Command cmd = new iDB2Command(cmdText, conn);
                 cmd.DeriveParameters();
 
-                cmd.Parameters["@RTID"].Value = Int32.Parse(rTIDTextBox.Text);
+                cmd.Parameters["@RTID"].Value = " ";
                 cmd.Parameters["@RTARDEPART"].Value = rTARDEPARTTextBox.Text.ToUpper();
                 cmd.Parameters["@RTARARRIVL"].Value = rTARARRIVLTextBox.Text.ToUpper();
-                cmd.Parameters["@RTDISTANCE"].Value = float.Parse(rTDISTANCETextBox.Text);
-                cmd.Parameters["@RTESTTM"].Value = Int32.Parse(rTESTTMTextBox.Text);
-                cmd.Parameters["@RTBASECOST"].Value = float.Parse(rTBASECOSTTextBox.Text);
-                cmd.Parameters["@RTACTDT"].Value = rtactdt;
-                cmd.Parameters["@RTIACTDT"].Value = rtiactdt;
-                cmd.Parameters["@RTNO"].Value = rTNOTextBox;
-                cmd.ExecuteNonQuery();
+                cmd.Parameters["@RTDISTANCE"].Value = rTDISTANCETextBox.Text;
+                cmd.Parameters["@RTESTTM"].Value = rTESTTMTextBox.Text;
+                cmd.Parameters["@RTBASECOST"].Value = rTBASECOSTTextBox.Text;
+                cmd.Parameters["@RTACTDT"].Value = rTACTDTDateTimePicker.Value;
+                cmd.Parameters["@RTIACTDT"].Value = rTIACTDTDateTimePicker.Value;
+                cmd.Parameters["@RTNO"].Value = rTNOTextBox.Text;
+                cmd.ExecuteNonQuery();*/
 
                 conn.Close();
             }
