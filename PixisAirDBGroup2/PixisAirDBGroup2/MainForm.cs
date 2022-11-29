@@ -52,5 +52,35 @@ namespace PixisAirDBGroup2
             gregRoute = new route();
             gregRoute.Show();
         }
+
+        private void routeToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            gregRoute = new route();
+            gregRoute.Show();
+        }
+
+        private void airplaneSQLToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            sqlBoyer = new SQLBoyer();
+            sqlBoyer.Show();
+        }
+
+        private void airplaneDB2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ibmJordan = new IBMJordan();
+            ibmJordan.Show();
+        }
+
+        private void airportSQLToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            tomAirport = new Airport();
+            tomAirport.Show();
+        }
+
+        private void airportDB2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            tomIbm = new IBM();
+            tomIbm.Show();
+        }
     }
 }

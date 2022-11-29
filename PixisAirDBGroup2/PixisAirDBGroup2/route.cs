@@ -105,7 +105,8 @@ namespace PixisAirDBGroup2
             string rtiactdtTemp = rTIACTDTDateTimePicker.Value.ToString("s");
             string rtiactdt = rtiactdtTemp.Substring(0, rtiactdtTemp.IndexOf("T"));
 
-            string cmdText = "INSERT INTO FLIGHT2022.ROUTE  VALUES(default , '" + rTARDEPARTTextBox.Text.ToUpper() + "', '" + rTARARRIVLTextBox.Text.ToUpper() +
+            string cmdText = "INSERT INTO FLIGHT2022.ROUTE  VALUES(default , '" + rTARDEPARTTextBox.Text.ToUpper() + "', '" + 
+                                rTARARRIVLTextBox.Text.ToUpper() +
                                 "', " + rTDISTANCETextBox.Text + ", " + rTESTTMTextBox.Text + ", " + rTBASECOSTTextBox.Text + ", '" + 
                                 rtactdt + "', '" +
                                 rtiactdt + "', " + rTNOTextBox.Text + ")";

@@ -33,6 +33,16 @@
             this.btnJordanSql = new System.Windows.Forms.Button();
             this.btnJordanIBM = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.routeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.airplaneToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.airportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.airplaneSQLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.airplaneDB2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.airportSQLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.airportDB2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.routeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnTomSql
@@ -85,6 +95,79 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.routeToolStripMenuItem,
+            this.airplaneToolStripMenuItem,
+            this.airportToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.TabIndex = 5;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // routeToolStripMenuItem
+            // 
+            this.routeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.routeToolStripMenuItem1});
+            this.routeToolStripMenuItem.Name = "routeToolStripMenuItem";
+            this.routeToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
+            this.routeToolStripMenuItem.Text = "Route";
+            // 
+            // airplaneToolStripMenuItem
+            // 
+            this.airplaneToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.airplaneSQLToolStripMenuItem,
+            this.airplaneDB2ToolStripMenuItem});
+            this.airplaneToolStripMenuItem.Name = "airplaneToolStripMenuItem";
+            this.airplaneToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
+            this.airplaneToolStripMenuItem.Text = "Airplane";
+            // 
+            // airportToolStripMenuItem
+            // 
+            this.airportToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.airportSQLToolStripMenuItem,
+            this.airportDB2ToolStripMenuItem});
+            this.airportToolStripMenuItem.Name = "airportToolStripMenuItem";
+            this.airportToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
+            this.airportToolStripMenuItem.Text = "Airport";
+            // 
+            // airplaneSQLToolStripMenuItem
+            // 
+            this.airplaneSQLToolStripMenuItem.Name = "airplaneSQLToolStripMenuItem";
+            this.airplaneSQLToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.airplaneSQLToolStripMenuItem.Text = "Airplane SQL";
+            this.airplaneSQLToolStripMenuItem.Click += new System.EventHandler(this.airplaneSQLToolStripMenuItem_Click);
+            // 
+            // airplaneDB2ToolStripMenuItem
+            // 
+            this.airplaneDB2ToolStripMenuItem.Name = "airplaneDB2ToolStripMenuItem";
+            this.airplaneDB2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.airplaneDB2ToolStripMenuItem.Text = "Airplane DB2";
+            this.airplaneDB2ToolStripMenuItem.Click += new System.EventHandler(this.airplaneDB2ToolStripMenuItem_Click);
+            // 
+            // airportSQLToolStripMenuItem
+            // 
+            this.airportSQLToolStripMenuItem.Name = "airportSQLToolStripMenuItem";
+            this.airportSQLToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.airportSQLToolStripMenuItem.Text = "Airport SQL";
+            this.airportSQLToolStripMenuItem.Click += new System.EventHandler(this.airportSQLToolStripMenuItem_Click);
+            // 
+            // airportDB2ToolStripMenuItem
+            // 
+            this.airportDB2ToolStripMenuItem.Name = "airportDB2ToolStripMenuItem";
+            this.airportDB2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.airportDB2ToolStripMenuItem.Text = "Airport DB2";
+            this.airportDB2ToolStripMenuItem.Click += new System.EventHandler(this.airportDB2ToolStripMenuItem_Click);
+            // 
+            // routeToolStripMenuItem1
+            // 
+            this.routeToolStripMenuItem1.Name = "routeToolStripMenuItem1";
+            this.routeToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.routeToolStripMenuItem1.Text = "Route";
+            this.routeToolStripMenuItem1.Click += new System.EventHandler(this.routeToolStripMenuItem1_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -95,9 +178,14 @@
             this.Controls.Add(this.btnJordanSql);
             this.Controls.Add(this.btnTomIBM);
             this.Controls.Add(this.btnTomSql);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
             this.Text = "MainForm";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -108,5 +196,14 @@
         private System.Windows.Forms.Button btnJordanSql;
         private System.Windows.Forms.Button btnJordanIBM;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem routeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem routeToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem airplaneToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem airplaneSQLToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem airplaneDB2ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem airportToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem airportSQLToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem airportDB2ToolStripMenuItem;
     }
 }

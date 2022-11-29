@@ -33,7 +33,7 @@ namespace PixisAirDBGroup2
 
             try
             {
-                conn = new iDB2Connection("DataSource=deathstar.gtc.edu; LibraryList=FLIGHT2022;Naming=System");
+                conn = new iDB2Connection("DataSource=deathstar.gtc.edu;LibraryList=FLIGHT2022;Naming=System");
                 sql = "SELECT * FROM AIRPORT";
                 adapter = new iDB2DataAdapter(sql, conn);
 
@@ -68,7 +68,7 @@ namespace PixisAirDBGroup2
 
             try
             {
-                conn = new iDB2Connection("DataSource=deathstar.gtc.edu");
+                conn = new iDB2Connection("DataSource=deathstar.gtc.edu;LibraryList=FLIGHT2022;Naming=System");
                 conn.Open();
 
                 iDB2Command cmd = new iDB2Command(cmdText, conn);
